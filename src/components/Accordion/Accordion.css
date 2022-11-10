@@ -1,0 +1,79 @@
+.accordion {
+    max-width: 1023px;
+    margin: 30px auto;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    width: 100%;
+  }
+  .accordion-text.large {
+    line-height: 1.6;
+    color: #ff6060;
+    width: 100%;
+    margin: 25px 0;
+  }
+  .accordionHeading {
+    background: #ff6060;
+    padding: 14px 0;
+    border-radius: 5px;
+  }
+  .accordionHeading .accordionContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 47px;
+  }
+  .accordionHeading span {
+    cursor: pointer;
+  }
+  .accordionContent {
+    max-height: 0;
+    opacity: 0;
+    background: #f6f6f6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-transition: all ease-in-out;
+    transition: all ease-in-out;
+    border-bottom-right-radius: 15px;
+  }
+
+  .accordionContent.show {
+    max-height: 800px;
+    opacity: 1;
+  }
+
+  .accordionTextList{
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 5px 20px;
+    color: #ff6060;
+    width: 100%;
+    list-style-type: none;
+  }
+@media screen and (max-width: 767px){
+    .accordion {
+        min-width: 100%;
+    }
+    .accordionContainer h3{
+      font-size: 13px;
+    }
+    .accordionHeading .accordionContainer{
+        height: 30px;
+    }
+    .accordionTextList{
+      font-size: 12px;
+    }
+    .accordionHeading .accordionContainer {
+      height: 30px;
+    }
+  }

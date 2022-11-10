@@ -1,0 +1,64 @@
+.carousselContainer{
+    position: relative;
+}
+.caroussel{
+    position: relative;
+    margin-top: 20px;
+    max-height: 410px;   
+}
+.arrow-left, .arrow-right {
+    position: absolute;
+    cursor: pointer;
+    min-width: 20px;
+    max-width: 5%;
+    z-index: 10;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.arrow-left {
+    top: 180px;
+    left: 10px;
+}
+.arrow-right {
+    top: 180px;
+    right: 10px;
+}
+.slide {
+    opacity: 0;
+    -webkit-transition-duration: 1s ease;
+    transition-duration: 1s ease;
+}
+.slide.active {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+.imageCarousel {
+    width: 100%;
+    height: 410px;
+    border-radius: 5px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.pagination {
+    position: absolute;
+    top: 480px;
+    right: 50%;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    text-decoration: none;
+
+}
+.hide {
+    display: none;
+}

@@ -1,0 +1,48 @@
+
+.error404{
+    position:relative;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size:288px;
+    color: #FF6060;
+    bottom: 200px;
+}
+
+.errorText{
+    position:relative;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size:36px;
+    color: #FF6060;
+    bottom: 450px;
+}
+
+.errorLink{
+    text-decoration: underline #FF6060;
+    position:relative;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size:18px;
+    color: #FF6060;
+    bottom: 250px;
+}
+
+@media screen and (max-width: 767px){
+    .error404{
+        font-size:90px; 
+        bottom: 20px;    
+    }
+    .errorText{
+        font-size:18px;
+        bottom: 100px;
+    }
+    .errorLink{
+        bottom: 20px;
+    }
+}

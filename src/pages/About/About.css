@@ -1,0 +1,17 @@
+
+.bannerContainer{
+    position: relative;
+    display: block;
+    max-width: 1240px;
+    width: 100%;
+    height: 223px;
+    margin-top: 30px;
+    overflow : hidden;
+    border-radius: 25px;
+
+}
+.banner{
+    filter: brightness(70%);
+    position: absolute;
+	width:100%; height:100%;
+}

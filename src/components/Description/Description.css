@@ -1,0 +1,94 @@
+.infoContainer{
+    display:flex;
+    justify-content: space-between;
+}
+
+.locationTitle{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    margin-right: 200px;
+    margin-bottom: 0px;
+    color: #ff6060;   
+    width: 80%;
+}
+
+.locationLocation{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #ff6060;
+    margin-top: 5px;
+}
+
+.hostContainer{
+    display:flex;
+    position: relative;
+}
+
+.hostName {
+    position: absolute;
+    right: 80px;
+    top:20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #ff6060;
+
+}
+.rateContainer{
+    position: relative;
+}
+.rate{
+    position:absolute;
+    right:0px;
+    top: 110px;
+    width: 150px;
+}
+.hostPicture {
+    position: absolute;
+    right: 0px;
+    top:10px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 5px;
+}
+
+.accordionContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+@media screen and (max-width: 767px){
+    .infoContainer{
+        display:block;
+    }
+    .locationTitle{
+        font-size: 18px;   
+        width: 90%;   
+    }
+    .rate{
+        left: 0px;
+        top: -20px
+    }
+    .hostPicture {
+        width: 40px;
+        height: 40px;
+        top: -40px
+    }
+    .hostName {
+        font-size:12px;
+        right: 50px;
+        top: -30px;
+        width: 50px;
+    }
+    .accordionContainer{
+        display: block;
+    }
+  
+  }

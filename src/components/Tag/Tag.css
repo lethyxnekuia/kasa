@@ -1,0 +1,41 @@
+.tagContainer{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.tag{
+    height: 1px;
+    background-color: #ff6060;
+    color: #fff;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-right: 15px;
+    padding: 12px;
+    margin-top: 10px;
+}
+
+.tagText { 
+    font-size: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    color: #fff;
+}
+
+@media screen and (max-width: 767px){
+  .tagContainer{
+    display: flex;
+    margin-bottom: 50px;
+  }
+  .tag{
+    padding: 10px;
+}
+
+
+}
