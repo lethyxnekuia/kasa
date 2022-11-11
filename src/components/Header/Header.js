@@ -1,15 +1,15 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import Logo from '../../assets/logo.svg';
 import '../Header/Header.css';
 
 const Header = () => {
-  const urlParams  = window.location.href;
+  const location = useLocation()
   let pageMain = ""
   let pageAbout = ""
-  if (urlParams === "http://localhost:3000/"){
+  if (location.pathname === "/"){
     pageMain = "pageMainActive"
   } 
-  if (urlParams === "http://localhost:3000/a-propos") {
+  if (location.pathname === "/a-propos") {
     pageAbout = "pageAboutActive"
   }
   return (

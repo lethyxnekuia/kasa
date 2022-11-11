@@ -16,7 +16,7 @@ function Location(){
         return (
               <Error />
           );
-    }else{
+    }
     return (
         <div>
             <Header/>
@@ -32,7 +32,7 @@ function Location(){
             <Footer/>
         </div>
         
-    )}
+    )
 }
 
 export default Location
